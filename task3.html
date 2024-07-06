@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learnify - Your Learning Platform</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background: #f7f7f7;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            text-align: center;
+            margin: 0;
+        }
+
+        header nav ul {
+            list-style: none;
+            text-align: center;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        .hero-section {
+            background: url('https://static.vecteezy.com/system/resources/thumbnails/026/365/937/small_2x/beautiful-blurred-green-nature-background-ai-generated-photo.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+        }
+
+        .hero-section h2 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .hero-section p {
+            font-size: 1.2em;
+        }
+
+        .courses-section, .testimonials-section, .contact-section {
+            padding: 50px 0;
+            background: #fff;
+            text-align: center;
+        }
+
+        .courses-grid, .testimonials-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .course-item, .testimonial-item {
+            flex: 1 1 calc(30% - 20px);
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: #fff;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .course-item img, .testimonial-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .course-item h3, .testimonial-item h3 {
+            padding: 10px;
+            background: #333;
+            color: #fff;
+        }
+
+        .course-item p, .testimonial-item p {
+            padding: 10px;
+        }
+
+        .course-item button {
+            padding: 10px;
+            border: none;
+            background: #333;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 0 0 5px 5px;
+            width: 100%;
+        }
+
+        .course-item button:hover {
+            background: #555;
+        }
+
+        .contact-section form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-section form input, .contact-section form textarea {
+            width: 100%;
+            max-width: 500px;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact-section form button {
+            padding: 10px 20px;
+            border: none;
+            background: #333;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .contact-section form button:hover {
+            background: #555;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Learnify</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="container">
+            <h2>Welcome to Learnify</h2>
+            <p>Enhance your skills with our courses</p>
+        </div>
+    </section>
+
+    <section id="courses" class="courses-section">
+        <div class="container">
+            <h2>Our Courses</h2>
+            <div class="courses-grid">
+                <div class="course-item">
+                    <img src="https://t4.ftcdn.net/jpg/03/92/02/65/360_F_392026569_GY7ysbevJK4ZwYV1i9Jvmkf7gFNP79VD.jpg" alt="Course 1">
+                    <h3>JAVA</h3>
+                    <p>Java is a multi-platform, object-oriented, and network-centric language that can be used as a platform in itself</p>
+                    <button>Enroll Now</button>
+                </div>
+                <div class="course-item">
+                    <img src="https://img.freepik.com/free-photo/programming-background-collage_23-2149901782.jpg" alt="Course 2">
+                    <h3>HTML</h3>
+                    <p>HyperText Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser</p>
+                    <button>Enroll Now</button>
+                </div>
+                <div class="course-item">
+                    <img src="https://t3.ftcdn.net/jpg/01/38/58/62/360_F_138586261_nYWe7WbUi9ouurv6tcl2WmpLaXV1xdea.jpg" alt="Course 3">
+                    <h3>SQL</h3>
+                    <p>Structured query language is a programming language for storing and processing information in a relational database</p>
+                    <button>Enroll Now</button>
+                </div>
+                <!-- Add more courses as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2>What Our Students Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-item">
+                    <h3>Student Name 1</h3>
+                    <p>"I really enjoyed the online course. I thought it was well planned and layed out, easy for me to follow. The work load(h.w. & test)was just enough, so i could finish everything with enough time, learn about the topics and not feel over loaded and rushed."</p>
+                </div>
+                <div class="testimonial-item">
+                    <h3>Student Name 2</h3>
+                    <p>"The course was everything you said it would be, fun but a lot of work. And it was! I enjoyed the web-labs because they were a lot of fun and easy to understand. And the answers were usually somewhere in the text."</p>
+                </div>
+                <div class="testimonial-item">
+                    <h3>Student Name 3</h3>
+                    <p>"I liked being able to access info anytime of the day. I actually didn’t become as interested in the subject after all. I did have trouble with the speed of the course webpage, I have a high speed connection and I always had trouble with the webpage being too slow. I would have liked more extra credit opportunities."</p>
+                </div>
+                <!-- Add more testimonials as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Learnify. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
