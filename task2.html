@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleHub - Your Fashion Destination</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background: #f7f7f7;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            text-align: center;
+            margin: 0;
+        }
+
+        header nav ul {
+            list-style: none;
+            text-align: center;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        .hero-section {
+            background: url('https://png.pngtree.com/background/20230618/original/pngtree-visualizing-e-commerce-in-benin-through-3d-rendering-for-social-media-picture-image_3753644.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+        }
+
+        .hero-section h2 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .hero-section p {
+            font-size: 1.2em;
+        }
+
+        .products-section {
+            padding: 50px 0;
+            background: #fff;
+        }
+
+        .products-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .product-item {
+            flex: 1 1 calc(30% - 20px);
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            background: #fff;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .product-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-item h3 {
+            padding: 10px;
+            background: #333;
+            color: #fff;
+        }
+
+        .product-item p {
+            padding: 10px;
+        }
+
+        .product-item button {
+            padding: 10px;
+            border: none;
+            background: #333;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 0 0 5px 5px;
+            width: 100%;
+        }
+
+        .product-item button:hover {
+            background: #555;
+        }
+
+        .product-detail {
+            padding: 50px 0;
+            text-align: center;
+            background: #fff;
+        }
+
+        .product-detail img {
+            width: 50%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .product-detail h2 {
+            margin-bottom: 20px;
+        }
+
+        .product-detail p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .product-detail button {
+            padding: 10px 20px;
+            border: none;
+            background: #333;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .product-detail button:hover {
+            background: #555;
+        }
+
+        .cart-section {
+            padding: 50px 0;
+            text-align: center;
+            background: #fff;
+        }
+
+        .cart-section table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .cart-section th, .cart-section td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        .cart-section th {
+            background: #f4f4f4;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>StyleHub</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#cart">Cart</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="container">
+            <h2>Welcome to StyleHub</h2>
+            <p>Your Fashion Destination</p>
+        </div>
+    </section>
+
+    <section id="products" class="products-section">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="products-grid">
+                <div class="product-item">
+                    <img src="https://assets.entrepreneur.com/content/3x2/2000/20171212213121-apple-website.jpeg" alt="Product 1">
+                    <h3>WATCH</h3>
+                    <p>$19.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://5.imimg.com/data5/SELLER/Default/2022/1/QZ/AO/RT/142262681/istockphoto-1301394040-170667a-500x500.jpg" alt="Product 2">
+                    <h3>SHOES</h3>
+                    <p>$29.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://www.shutterstock.com/image-photo/pastel-colored-womens-hand-bag-600w-2316939619.jpg" alt="Product 3">
+                    <h3>HANDBAG</h3>
+                    <p>$39.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <!-- Add more products as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section id="product-detail" class="product-detail">
+        <div class="container">
+            <h2>Product Detail Title</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor, urna id volutpat venenatis, ipsum libero dictum magna, et malesuada tortor erat at lorem.</p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+
+    <section id="cart" class="cart-section">
+        <div class="container">
+            <h2>Your Cart</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>WATCH</td>
+                        <td>1</td>
+                        <td>$19.99</td>
+                        <td>$19.99</td>
+                    </tr>
+                    <tr>
+                        <td>SHOES</td>
+                        <td>2</td>
+                        <td>$29.99</td>
+                        <td>$59.98</td>
+                    </tr>
+
+                    <tr>
+                        <td>HANDBAG</td>
+                        <td>1</td>
+                        <td>$39.99</td>
+                        <td>$39.99</td>
+                    </tr>
+                    <!-- Add more cart items as needed -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 StyleHub. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
